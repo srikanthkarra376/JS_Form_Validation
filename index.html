@@ -11,7 +11,7 @@
 <body>
     <div>
       <h1 id ="heading">Index Page of the MVC Application (Lab1)</h1>
-      <form>
+      <form id="myform">
           <fieldset>
                 <legend>Personal Information:</legend>
                 <label for="fName">First Name:</label> 
@@ -22,18 +22,18 @@
            <fieldset>
                 <legend>Birth Day:</legend>
                 <label  for="date">Date:</label> 
-                <input type="date" id="dateInput" name="date" >
+                <input  type="date" id="dateInput" name="date" >
                
             </fieldset>
                <fieldset class="sex">
                   <legend>Sex:</legend>
                   &nbsp;&nbsp;&nbsp;
                     <label for="male">Male:</label> 
-                    <input type="radio"id="male" name="sex" value="male" onclick="toggleFM(this.value)"><br>
+                    <input type="radio" id="male" name="sex" value="male" onclick="toggleFM(this.value)"><br>
                     <label for="female">Female:</label> 
-                    <input type="radio"id="female" name="sex" value="female"  onclick="toggleFM(this.value)">
+                    <input type="radio" id="female" name="sex" value="female"  onclick="toggleFM(this.value)">
                 </fieldset>
-                <input type="button" onclick="validateMyform()" value="Envoyer">
+                <button type="submit" >Envoyer</button>
       </form> 
       <div id="details">
   
